@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Callum Barratt</title>
+    <%= stylesheet_link_tag    'admin', media: 'all' %>
+    <%= javascript_include_tag 'admin' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'navigation' %>
+    <section class="content">
+      <div class="inner">
+      <%= yield %>
+      </div>
+    </section>
+  </body>
+</html>

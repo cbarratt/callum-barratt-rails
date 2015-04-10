@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - db/**/*
+    - bin/**
+
+SignalException:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Enabled: false
+
+MethodLength:
+  Enabled: false
