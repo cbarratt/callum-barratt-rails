@@ -4,6 +4,7 @@ ruby '2.2.1'
 gem 'rails', '4.2.1'
 gem 'pg'
 gem 'puma'
+gem 'rack-cors', require: 'rack/cors'
 
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'responders', '~> 2.0'
