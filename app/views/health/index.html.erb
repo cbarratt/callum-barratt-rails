@@ -54,7 +54,7 @@
             <td><%= m.bodyfat_mass if m.bodyfat_mass.present? %></td>
             <td><%= '%.2f' % m.bodyfat_percentage if m.bodyfat_percentage.present? %></td>
             <td><%= m.lean_mass if m.lean_mass.present? %></td>
-            <td><%= m.taken_at.strftime('%d %b %Y %I:%M %P') %></td>
+            <td><%= m.taken_at.to_s(:weight) %></td>
           </tr>
         <% end %>
       </tbody>
