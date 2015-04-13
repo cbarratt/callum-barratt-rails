@@ -78,7 +78,7 @@
       <tbody>
         <% @macronutrients.each do |macro| %>
           <tr>
-            <td><%= link_to macro.logged_date.to_s(:long_ordinal), "http://www.myfitnesspal.com/food/diary/callumbarratt?date=#{macro.logged_date}" %></td>
+            <td><%= link_to macro.logged_date.to_s(:readable), "http://www.myfitnesspal.com/food/diary/callumbarratt?date=#{macro.logged_date}" %></td>
             <td><%= macro.calories %> calories</td>
             <td><%= macro.carbs %>g</td>
             <td><%= macro.fat %>g</td>
