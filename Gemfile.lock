@@ -44,7 +44,6 @@ GEM
     autoprefixer-rails (5.1.11)
       execjs
       json
-    bcrypt (3.1.10)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -55,10 +54,6 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
-    clearance (1.9.0)
-      bcrypt
-      email_validator (~> 1.4)
-      rails (>= 3.1)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -73,8 +68,6 @@ GEM
     dotenv (2.0.1)
     dotenv-rails (2.0.1)
       dotenv (= 2.0.1)
-    email_validator (1.5.0)
-      activemodel
     erubis (2.7.0)
     excon (0.45.3)
     execjs (2.5.2)
@@ -201,14 +194,12 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
-  clearance
   coffee-rails
   dotenv-rails
   excon
   heroku-deflater
   jquery-rails
   mechanize
-  nokogiri
   pg
   pry-rails
   puma
