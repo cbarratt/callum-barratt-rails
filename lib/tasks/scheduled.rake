@@ -41,8 +41,6 @@ namespace :withings do
       to_be_deleted << record.id
     end
 
-    binding.pry
-
     Weighin.destroy(to_be_deleted) if to_be_deleted.size > 0
   end
 end
