@@ -18,6 +18,6 @@ class Myfitnesspal
 
   def report_data(type)
     macro = type.titleize
-    JSON.parse(@mechanize.get("http://www.myfitnesspal.com/reports/results/nutrition/#{macro}/30.json?report_name=#{macro}").body)
+    JSON.parse(@mechanize.get("http://www.myfitnesspal.com/reports/results/nutrition/#{macro}/800.json?report_name=#{macro}").body)
   end
 end
