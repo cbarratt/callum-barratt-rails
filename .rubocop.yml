@@ -14,3 +14,6 @@ LineLength:
 
 MethodLength:
   Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false

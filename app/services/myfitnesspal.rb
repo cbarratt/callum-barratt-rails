@@ -7,17 +7,13 @@ class Myfitnesspal
   end
 
   def authenticate
-    @mechanize = ::Mechanize.new
-    login_page = @mechanize.get 'https://www.myfitnesspal.com/account/login'
-    form = login_page.forms.first
-
-    form.field_with(id: 'username').value = @user
-    form.field_with(id: 'password').value = @password
-    form.submit
+    session = Excon.post('https://www.myfitnesspal.com/account/login', body: "username=#{@user}&password=#{@password}")
+    @cookie = CGI::Cookie.parse(session.headers['Set-Cookie'])['_session_id']
   end
 
   def report_data(type)
-    macro = type.titleize
-    JSON.parse(@mechanize.get("http://www.myfitnesspal.com/reports/results/nutrition/#{macro}/800.json?report_name=#{macro}").body)
+    data = Excon.get("http://www.myfitnesspal.com/reports/results/nutrition/#{type}/400.json?report_name=#{type}", headers: { 'Cookie' => @cookie.to_s })
+
+    JSON.parse(data.body)
   end
 end

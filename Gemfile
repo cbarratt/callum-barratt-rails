@@ -9,7 +9,6 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'responders', '~> 2.0'
 
-# Gems used for old front-end (soon to be removed)
 gem 'bootstrap-sass'
 gem 'active_link_to'
 
@@ -19,7 +18,6 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 
 gem 'excon'
-gem 'mechanize'
 gem 'simplificator-withings'
 
 group :production, :staging do
