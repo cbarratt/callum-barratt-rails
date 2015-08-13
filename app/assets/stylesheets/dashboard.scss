@@ -84,6 +84,12 @@ h3 small {
   padding: 20px;
 }
 
+@media (min-width: 400px) {
+  .list-group-item h2 {
+    font-size: 54px;
+  }
+}
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
