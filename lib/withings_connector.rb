@@ -1,6 +1,4 @@
 class WithingsConnector
-  require 'withings'
-
   attr_reader :user
 
   def initialize

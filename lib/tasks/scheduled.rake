@@ -1,3 +1,9 @@
+require 'excon'
+require 'withings'
+
+require './lib/myfitnesspal'
+require './lib/withings_connector'
+
 desc 'Pull macronutrient data from myfitnesspal'
 namespace :myfitnesspal do
   task fetch_data: :environment do

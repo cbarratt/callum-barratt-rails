@@ -17,8 +17,8 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 
-gem 'excon'
-gem 'simplificator-withings'
+gem 'excon', require: false
+gem 'simplificator-withings', require: false
 
 group :production, :staging do
   gem 'heroku-deflater'
