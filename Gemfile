@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.3'
 
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 gem 'pg'
 gem 'puma'
 gem 'rack-cors', require: 'rack/cors'
@@ -16,6 +16,8 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
+
+gem 'instagram'
 
 gem 'excon', require: false
 gem 'simplificator-withings', require: false
