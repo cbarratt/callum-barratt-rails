@@ -6,5 +6,7 @@ class HealthController < ApplicationController
 
     @current_intake = Macro.find_by(logged_date: Date.today)
     @macronutrients = Macro.order(logged_date: :desc)
+
+    fresh_when(etag: @macronutrients, last_modified: @macronutrients.first.updated_at)
   end
 end
