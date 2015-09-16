@@ -17,8 +17,6 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 
-gem 'instagram'
-
 gem 'excon', require: false
 gem 'simplificator-withings', require: false
 
@@ -33,4 +31,8 @@ group :development do
   gem 'dotenv-rails'
   gem 'quiet_assets'
   gem 'pry-rails'
+end
+
+group :test do
+  gem 'rspec-rails'
 end
