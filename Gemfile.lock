@@ -41,7 +41,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-    autoprefixer-rails (6.0.2)
+    autoprefixer-rails (6.0.3)
       execjs
       json
     better_errors (2.1.1)
@@ -75,7 +75,7 @@ GEM
       activesupport (>= 4.1.0)
     heroku-deflater (0.5.3)
       rack (>= 1.4.5)
-    httparty (0.13.5)
+    httparty (0.13.6)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
@@ -102,7 +102,7 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
-    puma (2.13.4)
+    puma (2.14.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
