@@ -28,7 +28,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  # gem 'dotenv-rails'
+  gem 'dotenv-rails', github: 'y-yagi/dotenv', branch: 'can_use_rails_5'
   gem 'quiet_assets'
   gem 'pry-rails'
 end
