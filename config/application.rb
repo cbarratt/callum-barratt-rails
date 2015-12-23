@@ -23,12 +23,5 @@ module Callum
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     # config.autoload_paths += %W(#{config.root}/app/services)
-
-    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
-      allow do
-        origins '*'
-        resource '/api/v1/*', headers: :any, methods: [:get, :post, :put, :delete, :options]
-      end
-    end
   end
 end
