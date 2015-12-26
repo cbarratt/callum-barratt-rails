@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.3.0'
 
 gem 'rails', '5.0.0.beta1'
 gem 'pg'
@@ -31,8 +31,4 @@ group :development do
   gem 'dotenv-rails', github: 'y-yagi/dotenv', branch: 'can_use_rails_5'
   gem 'quiet_assets'
   gem 'pry-rails'
-end
-
-group :test do
-  # gem 'rspec-rails'
 end
