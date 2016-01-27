@@ -1,30 +1,6 @@
 require 'excon'
 require 'withings'
-
-require './lib/myfitnesspal'
 require './lib/withings_connector'
-
-desc 'Pull macronutrient data from myfitnesspal'
-namespace :myfitnesspal do
-  task fetch_data: :environment do
-    Rails.logger = Logger.new(STDOUT)
-
-    %w(calories carbs fat protein).each do |type|
-      data = ::Myfitnesspal.new.report_data(type)['data']
-
-      data.each do |measure|
-        macro = measure['total']
-
-        # We don't want to store a record if there are 0 calories
-        if macro > 0.0
-          date = Date.parse(measure['date']).to_s(:db)
-          reading = Macro.where(logged_date: date).first_or_create
-          reading.update("#{type}": macro.round)
-        end
-      end
-    end
-  end
-end
 
 desc 'Pull weight data from Withings API'
 namespace :withings do

@@ -11,20 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150508153452) do
+ActiveRecord::Schema.define(version: 20160127105350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "macros", force: :cascade do |t|
-    t.string   "calories"
-    t.string   "carbs"
-    t.string   "fat"
-    t.string   "protein"
-    t.date     "logged_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "weighins", force: :cascade do |t|
     t.integer  "withings_id"
