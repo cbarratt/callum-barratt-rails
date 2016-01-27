@@ -104,8 +104,6 @@ GEM
       websocket-driver (>= 0.5.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    heroku-deflater (0.6.2)
-      rack (>= 1.4.5)
     hiredis (0.5.2)
     hitimes (1.2.3)
     httparty (0.13.7)
@@ -201,7 +199,6 @@ DEPENDENCIES
   binding_of_caller
   dotenv-rails!
   excon
-  heroku-deflater
   pg
   pry-rails
   puma

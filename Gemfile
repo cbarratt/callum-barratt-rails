@@ -13,7 +13,6 @@ gem 'excon', require: false
 gem 'simplificator-withings', require: false
 
 group :production, :staging do
-  gem 'heroku-deflater'
   gem 'rails_12factor'
 end
 
