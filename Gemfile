@@ -14,6 +14,7 @@ gem 'simplificator-withings', require: false
 
 group :production, :staging do
   gem 'rails_12factor'
+  gem 'rorvswild'
 end
 
 group :development do

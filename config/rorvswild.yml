@@ -1,0 +1,7 @@
+development:
+  app_id: 126
+  api_key: "GdFKNGIaFKK8GyHrvHkO"
+
+production:
+  app_id: 126
+  api_key: "GdFKNGIaFKK8GyHrvHkO"
