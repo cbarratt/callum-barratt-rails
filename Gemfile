@@ -6,7 +6,7 @@ gem 'pg'
 gem 'puma'
 gem 'rack-cors', require: 'rack/cors'
 
-gem 'active_model_serializers', '~> 0.8.3'
+gem 'active_model_serializers'
 gem 'responders', '~> 2.0'
 
 gem 'excon', require: false
